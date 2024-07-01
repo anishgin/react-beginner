@@ -1,6 +1,7 @@
 import React from "react";
 
 class AddContact extends React.Component {
+
     /*
     UseState :
     We dont want to re render compnent everytime
@@ -24,6 +25,7 @@ class AddContact extends React.Component {
         this.setState({name: "",
             email: ""})
 
+        this.props.history.push("/")
     }
 
     render() {
